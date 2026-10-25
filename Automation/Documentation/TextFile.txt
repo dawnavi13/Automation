@@ -1,0 +1,4 @@
+﻿to update the the ApplicationDbContext.cs file 
+	-> Open Package Manager Console
+	-> paste this command and execute: 
+	(Scaffold-DbContext "Name=ConnectionStrings:DefaultConnection" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Data -Context ApplicationDbContext -Force)
