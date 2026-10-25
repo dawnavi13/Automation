@@ -1,7 +1,5 @@
 ﻿using Automation.Interfaces;
-using Automation.Interfaces.CustomerInterface;
 using Automation.Services;
-using Automation.Services.CustomerService;
 
 namespace Automation.ServiceRegistration
 {
