@@ -9,8 +9,8 @@ namespace Automation.ServiceRegistration
            this IServiceCollection services)
         {
             services.AddScoped<ICustomerService, CustomerService>();
+            services.AddScoped<IStockDetailsService, StockDetailsService>();
 
-           
 
             return services;
         }

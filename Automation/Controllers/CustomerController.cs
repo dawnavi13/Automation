@@ -1,7 +1,6 @@
 ﻿using Automation.Interfaces;
 using Automation.Model;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Identity.Client;
 
 namespace Automation.Controllers
 {
