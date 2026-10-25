@@ -22,8 +22,8 @@ namespace Automation.Controllers
             return Ok(customers);
         }
 
-        [HttpPost("SaveCustomer/{customer}")]
-        public async Task<IActionResult> SaveCustomer(Customer customer)
+        [HttpPost("SaveCustomer")]
+        public async Task<IActionResult> SaveCustomer([FromBody] Customer customer)
         {
             int result = await _customerService.SaveCustomer(customer);
             return Ok(result);
@@ -39,8 +39,8 @@ namespace Automation.Controllers
         [HttpDelete("DeleteCutomer/{id}")]
         public async Task<IActionResult> DeleteCustomer(int id)
         {
-            int result = await _customerService.DeleteCustomerDetails(id);
-            return Ok(result);
+            await _customerService.DeleteCustomerDetails(id);
+            return Ok();
         }
     }
 }
